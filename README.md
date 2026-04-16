@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -12,32 +13,29 @@
         
         .bg-neuro-deep { background-color: #0D1726; }
         .text-synapse-gold { color: #C5A059; }
+        .border-synapse-gold { border-color: #C5A059; }
         
-        /* Glassmorphism Header */
+        /* Glassmorphism Header Effect */
         .nav-glass {
             background: rgba(255, 255, 255, 0.8);
             backdrop-filter: blur(12px);
             -webkit-backdrop-filter: blur(12px);
         }
 
-        /* Hero Parallax */
+        /* Hero Parallax using the recommended Neural Network image */
         .hero-visual {
             background: linear-gradient(rgba(13, 23, 38, 0.8), rgba(13, 23, 38, 0.8)), 
-                        url('https://images.unsplash.com/photo-1559757175-7b315e340659?q=80&w=2600&auto=format&fit=crop');
+                        url('http://googleusercontent.com/image_collection/image_retrieval/500533908182424173_0');
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
         }
 
-        /* Animated Highlight Bar */
-        .scroll-reveal {
-            opacity: 0;
-            transform: translateY(20px);
-            transition: all 0.8s ease-out;
-        }
-        .scroll-reveal.visible {
-            opacity: 1;
-            transform: translateY(0);
+        /* Impact Section Background Watermark */
+        .foundation-bg {
+            background: linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)),
+                        url('https://images.unsplash.com/photo-1614728894747-a83421e2b9c9?q=80&w=1000&auto=format&fit=crop');
+            background-size: cover;
         }
     </style>
 </head>
@@ -50,9 +48,9 @@
                 NOOSPHERE LLC
             </div>
             <div class="hidden md:flex space-x-10 text-xs font-semibold uppercase tracking-widest text-gray-500">
-                <a href="#impact" class="hover:text-synapse-gold transition">The Impact</a>
+                <a href="#impact" class="hover:text-synapse-gold transition">Scientific Legacy</a>
                 <a href="#services" class="hover:text-synapse-gold transition">Expertise</a>
-                <a href="#contact" class="text-neuro-deep border-b-2 border-synapse-gold pb-1">Inquiry</a>
+                <a href="#contact" class="px-4 py-2 bg-neuro-deep text-white rounded hover:bg-opacity-90 transition">Contact</a>
             </div>
         </div>
     </nav>
@@ -63,18 +61,20 @@
                 <p class="text-synapse-gold uppercase tracking-[0.4em] text-sm mb-4 font-semibold">Stony Brook, NY</p>
                 <h1 class="text-5xl md:text-8xl text-white mb-8 leading-tight">Clarity in the <br><span class="italic font-light">Molecular</span> Sphere.</h1>
                 <p class="text-xl text-gray-300 max-w-xl mb-10 font-light leading-relaxed">
-                    Bridging foundational neuroscience with commercial strategy. Led by the pioneer who first cloned the APP gene.
+                    Bridging foundational neuroscience with commercial strategy. Led by Professor Dmitry Goldgaber, the pioneer who first cloned the APP gene.
                 </p>
-                <a href="#services" class="inline-block bg-synapse-gold text-white px-12 py-5 rounded-sm font-bold uppercase tracking-widest hover:bg-white hover:text-neuro-deep transition duration-500 shadow-2xl">
-                    View Consulting Domains
-                </a>
+                <div class="flex gap-4">
+                    <a href="#services" class="inline-block bg-synapse-gold text-white px-8 py-4 rounded-sm font-bold uppercase tracking-widest hover:bg-white hover:text-neuro-deep transition duration-500 shadow-2xl">
+                        Consulting Services
+                    </a>
+                </div>
             </div>
         </div>
     </header>
 
     <section class="py-12 bg-white border-b border-gray-100">
-        <div class="max-w-7xl mx-auto px-6">
-            <p class="text-center text-[10px] uppercase tracking-[0.3em] text-gray-400 mb-8 font-bold">Featured Research In</p>
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <p class="text-[10px] uppercase tracking-[0.3em] text-gray-400 mb-8 font-bold">Featured Research In</p>
             <div class="flex flex-wrap justify-center items-center gap-12 md:gap-24 opacity-40 grayscale">
                 <span class="text-2xl font-serif italic text-neuro-deep">Nature</span>
                 <span class="text-2xl font-serif font-bold text-neuro-deep">SCIENCE</span>
@@ -84,27 +84,24 @@
         </div>
     </section>
 
-    <section id="impact" class="py-32 bg-gray-50">
-        <div class="max-w-7xl mx-auto px-6">
+    <section id="impact" class="py-32 foundation-bg relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 relative z-10">
             <div class="grid md:grid-cols-2 gap-20 items-center">
                 <div>
-                    <h2 class="text-4xl md:text-5xl text-neuro-deep mb-8">The APP Legacy</h2>
+                    <h2 class="text-4xl md:text-5xl text-neuro-deep mb-8">The APP Gene Legacy</h2>
                     <p class="text-lg text-gray-600 leading-relaxed mb-6 font-light">
-                        The cloning of the Amyloid Precursor Protein (APP) gene redefined our understanding of Alzheimer's Disease. This work allows Noosphere LLC to offer a level of technical due diligence that few can match.
+                        The cloning of the Amyloid Precursor Protein (APP) gene redefined modern understanding of Alzheimer's pathology[cite: 4]. This foundational expertise allows Noosphere LLC to provide unmatched technical due diligence and research advisory[cite: 18, 111].
                     </p>
-                    <ul class="space-y-4 text-neuro-deep font-semibold">
-                        <li class="flex items-center"><span class="w-1.5 h-1.5 bg-synapse-gold rounded-full mr-3"></span> Enzyme Cleavage Mechanisms</li>
-                        <li class="flex items-center"><span class="w-1.5 h-1.5 bg-synapse-gold rounded-full mr-3"></span> Amyloid-Beta Aggregation Strategy</li>
-                        <li class="flex items-center"><span class="w-1.5 h-1.5 bg-synapse-gold rounded-full mr-3"></span> Genetic Pathway Mapping</li>
-                    </ul>
+                    <div class="p-6 border-l-4 border-synapse-gold bg-white shadow-sm italic text-gray-700">
+                        "Our work provided the blueprint for understanding how enzyme cleavage produces the amyloid-beta peptides that accumulate in the brain"[cite: 4, 117].
+                    </div>
                 </div>
                 <div class="relative group">
-                    <div class="absolute -inset-4 bg-synapse-gold/20 rounded-lg blur-2xl opacity-0 group-hover:opacity-100 transition duration-1000"></div>
-                    <div class="relative bg-white p-12 rounded-lg shadow-2xl border border-gray-100">
-                        <h3 class="text-6xl font-bold text-neuro-deep mb-2">1987</h3>
-                        <p class="text-synapse-gold font-bold tracking-widest uppercase mb-6">Discovery Milestone</p>
-                        <p class="text-gray-500 font-light leading-relaxed">
-                            Professor Goldgaber leads the landmark study identifying the sequence of the protein that forms the core of Alzheimer's plaques.
+                    <div class="bg-neuro-deep p-12 rounded-lg shadow-2xl transform group-hover:-translate-y-2 transition duration-500">
+                        <h3 class="text-6xl font-bold text-synapse-gold mb-2">1987</h3>
+                        <p class="text-white font-bold tracking-widest uppercase mb-6 opacity-80">Historical Discovery</p>
+                        <p class="text-gray-300 font-light leading-relaxed">
+                            Professor Goldgaber leads the landmark research at Stony Brook University, successfully cloning the human APP gene[cite: 3, 4].
                         </p>
                     </div>
                 </div>
@@ -112,30 +109,47 @@
         </div>
     </section>
 
+    <section id="services" class="py-32 bg-gray-50 border-y border-gray-100">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-20">
+                <h2 class="text-4xl text-neuro-deep mb-4">Strategic Consulting</h2>
+                <div class="w-24 h-1 bg-synapse-gold mx-auto"></div>
+            </div>
+            <div class="grid md:grid-cols-3 gap-10">
+                <div class="bg-white p-10 shadow-lg border-t-4 border-neuro-deep hover:shadow-2xl transition">
+                    <h3 class="text-xl font-bold mb-4 text-neuro-deep uppercase tracking-wider">Drug Strategy</h3>
+                    <p class="text-gray-600 font-light">Expert navigation of the amyloid-beta pathway for pharmaceutical development and targeting[cite: 19].</p>
+                </div>
+                <div class="bg-white p-10 shadow-lg border-t-4 border-neuro-deep hover:shadow-2xl transition">
+                    <h3 class="text-xl font-bold mb-4 text-neuro-deep uppercase tracking-wider">Research Advisory</h3>
+                    <p class="text-gray-600 font-light">Mentorship for institutions and laboratories specializing in neurodegenerative disease research[cite: 20].</p>
+                </div>
+                <div class="bg-white p-10 shadow-lg border-t-4 border-neuro-deep hover:shadow-2xl transition">
+                    <h3 class="text-xl font-bold mb-4 text-neuro-deep uppercase tracking-wider">Biotech Due Diligence</h3>
+                    <p class="text-gray-600 font-light">Technical evaluation and risk assessment for investors looking at neuro-focused startups[cite: 21].</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="contact" class="py-32 bg-neuro-deep">
         <div class="max-w-4xl mx-auto px-6 text-center">
-            <h2 class="text-4xl text-white mb-6">Consultation Inquiry</h2>
-            <p class="text-gray-400 mb-16 font-light">Professional advisement for Biotech, VC, and Academia.</p>
-            <form class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <input type="text" placeholder="Name" class="p-4 bg-white/5 border border-white/10 rounded-sm text-white focus:border-synapse-gold outline-none">
-                <input type="email" placeholder="Email" class="p-4 bg-white/5 border border-white/10 rounded-sm text-white focus:border-synapse-gold outline-none">
-                <textarea placeholder="How can we assist your research or venture?" class="md:col-span-2 p-4 bg-white/5 border border-white/10 rounded-sm text-white h-40 focus:border-synapse-gold outline-none"></textarea>
-                <button class="md:col-span-2 bg-white text-neuro-deep py-5 font-bold uppercase tracking-widest hover:bg-synapse-gold hover:text-white transition duration-500">Submit Request</button>
+            <h2 class="text-4xl text-white mb-8">Secure an Expert Perspective</h2>
+            <p class="text-gray-400 mb-16 font-light">Inquire about bespoke consulting for industry, academia, or venture capital.</p>
+            <form class="grid grid-cols-1 md:grid-cols-2 gap-6 text-left">
+                <input type="text" placeholder="Full Name" class="p-4 bg-white/5 border border-white/10 rounded-sm text-white focus:border-synapse-gold outline-none transition">
+                <input type="email" placeholder="Email Address" class="p-4 bg-white/5 border border-white/10 rounded-sm text-white focus:border-synapse-gold outline-none transition">
+                <textarea placeholder="Briefly describe your inquiry..." class="md:col-span-2 p-4 bg-white/5 border border-white/10 rounded-sm text-white h-40 focus:border-synapse-gold outline-none transition"></textarea>
+                <button type="submit" class="md:col-span-2 bg-synapse-gold text-white py-5 font-bold uppercase tracking-widest hover:brightness-110 transition shadow-xl">
+                    Submit Inquiry
+                </button>
             </form>
         </div>
     </section>
 
-    <script>
-        // Simple Intersection Observer for reveal animations
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                }
-            });
-        }, { threshold: 0.1 });
+    <footer class="py-12 bg-white text-center text-xs text-gray-500 uppercase tracking-[0.3em]">
+        &copy; 2026 Noosphere LLC. All rights reserved. | Stony Brook, New York [cite: 193]
+    </footer>
 
-        document.querySelectorAll('.scroll-reveal').forEach(el => observer.observe(el));
-    </script>
 </body>
 </html>
