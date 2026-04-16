@@ -2,7 +2,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Inter', sans-serif; background-color: #fcfcfc; }
+        h1, h2, h3 { font-family: 'Playfair Display', serif; }
+        
         .bg-neuro-deep { background-color: #0D1726; }
         .text-synapse-gold { color: #C5A059; }
         .border-synapse-gold { border-color: #C5A059; }
